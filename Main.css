@@ -1,47 +1,39 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 20px;
-    margin-top: 400px;
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Space Empty Dense-as-An"
+    "Video Image Press";
+}
 
-  }
+.Dense-as-An { grid-area: Dense-as-An; 
+              writing-mode: vertical-rl;
+            font-size: 80pt;}
 
-.flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 15px;
-    font-family:"Helvetica";
-  }
+.Empty { grid-area: Empty;
+        writing-mode: vertical-rl;
+        font-size: 80pt; }
+
+.Space { grid-area: Space; 
+        writing-mode: vertical-rl;
+        font-size: 80pt;}
+
+
+.Video { grid-area: Video; 
+
+text-align: center;}
+
+.Image { grid-area: Image; 
+  text-align: center;}
+
+.Press { grid-area: Press; 
+  text-align: center;}
 
 
 
-    .box1 {
-     padding: 80px;
-    flex: 50
-    }
-    
-    .box2 {
-     padding: 80px;
-     flex: 50
-    }
-    
-    .box3 {
-    padding: 80px;
-    flex: 50
-    }
 
-    .box4 {
-      padding: 80px;
-      flex: 50
-      }
 
-     .box5 {
-    padding: 80px;
-    flex: 50
-    }
-    
-    @media (max-width: 414px) {
-        .box1, .box2, .box3 .box4 .box5{ flex: 50%;}  
+
+ 
