@@ -4,7 +4,12 @@
 
 
 
-body { padding: 2em; }
+body { padding: 2em;
+	
+		width:1000px;
+		margin:0 auto;
+	
+}
 
 a { color: blue; }
 em { font-style: italic; }
@@ -14,20 +19,43 @@ body,
 section,
 ul,
 figure {
-	display: grid;
 	
-	gap: 1em;
+	
 
-	grid-template-columns: repeat(1
-	, 1fr);
+
+
+	  }
 }
 
-.image-blocks {
+.api {
+	max-width: 880;
+	
+}
+
+.title {
+	font-size: 12pt;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.image-block {
 text-align: left;
 font-size: 8pt;
-width: min-content;
+
+align-items: center;
+align-content: center;
+
+display: ; }
+
+.image-blocks {
+display: grid;
+grid-template-columns: repeat(2);
 
 }
+ 
+
+
 
 .hide {
 	display: none;
@@ -35,7 +63,10 @@ width: min-content;
 	  
   .view:hover + .hide {
 	display: block;
-	
+	padding-top: 20px;
+	padding-bottom: 20px;
   }
+
+  
 
 
