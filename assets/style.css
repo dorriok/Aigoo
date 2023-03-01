@@ -1,5 +1,9 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
+
+
+
+
 body { padding: 2em; }
 
 a { color: blue; }
@@ -25,5 +29,13 @@ width: min-content;
 
 }
 
-  
-}
+.hide {
+	display: none;
+  }
+	  
+  .view:hover + .hide {
+	display: block;
+	
+  }
+
+
