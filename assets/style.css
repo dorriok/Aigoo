@@ -1,13 +1,58 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
+@media (min-width: 825px) {
+    :root {
+        --body-copy: 19px;
+        --page-spacing: 20px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        max-width:825px;
+        
+        --main-heading: calc(var(--body-copy) * 1)
+    }
+}
+.image-block {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column wrap;
+	text-align: left;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	padding: 40px;
+	border: 1px solid black;
+	margin-bottom:20px;
+	
+	}
 
 
 
+
+	
+
+
+@media (max-width: 414px) {
+		.image-block { flex: 100%;}  
+	}
+	
+@media (min-width: 825px) {
+	
+		
+
+
+		:root {
+			--body-copy: 19px;
+			--page-spacing: 20px;
+			line-height: 1.8;
+			margin-bottom: 20px;
+			max-width:825px;
+			margin: auto;
+			--main-heading: calc(var(--body-copy) * 1)
+		
+		}
+	}
 
 body { padding: 2em;
 	
-		width:1000px;
-		margin:0 auto;
 	
 }
 
@@ -27,8 +72,7 @@ figure {
 	  }
 }
 
-.api {
-	max-width: 880;
+
 	
 }
 
@@ -43,18 +87,14 @@ figure {
 text-align: left;
 font-size: 8pt;
 
-align-items: center;
-align-content: center;
-
-display: ; }
-
-.image-blocks {
-display: grid;
-grid-template-columns: repeat(2);
+align-items: left;
+align-content: left;
 
 }
- 
 
+
+
+ 
 
 
 .hide {

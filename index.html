@@ -113,13 +113,8 @@
 			<template id="link-block">
 				<li>
 					<figure class="link-block">
-						<h3 class="title"></h3>
-						<picture>
-							<source class="image-thumb">
-							<source class="image-square">
-							<source class="image-display">
-							<img class="image">
-						</picture>
+						<div class="view"> </div><h3 class="title"></h3>
+				
 						<a class="link">
 							<p class="link-title"></p>
 						</a>
@@ -127,6 +122,14 @@
 						<p class="type"></p>
 						<p class="time-updated"></p>
 						<p class="time-created"></p>
+
+						<div class="hide" > <picture>
+							<source class="image-thumb">
+							<source class="image-square">
+							<source class="image-display">
+							<img class="image">
+						</picture> </div>
+
 					</figure>
 				</li>
 			</template>
@@ -134,7 +137,7 @@
 			<template id="pdf-block">
 				<li>
 					<figure class="pdf-block">
-						<h3 class="title"></h3>
+						<div class="view"><h3 class="title"></h3>
 						<picture>
 							<source class="image-thumb">
 							<source class="image-square">
@@ -155,26 +158,21 @@
 			<template id="text-block">
 				<li>
 					<figure class="text-block">
-						<h3 class="title"></h3>
+						 <h3 class="title"></h3>
 						<div class="content"></div> <!-- Text blocks insert their HTML here. -->
 						<figcaption class="description"></figcaption>
 						<p class="type"></p>
 						<p class="time-updated"></p>
-						<p class="time-created"></p>
-					</figure>
+						<p class="time-created"></p> 
+					</figure> 
 				</li>
 			</template>
 			<!-- YouTube, Vimeo, etc. -->
 			<template id="video-embed-block">
 				<li>
 					<figure class="video-embed-block">
-						<h3 class="title"></h3>
-						<picture>
-							<source class="image-thumb">
-							<source class="image-square">
-							<source class="image-display">
-							<img class="image">
-						</picture>
+						<div class="view"><h3 class="title"></h3>
+						
 						<div class="embed"></div>
 						<a class="link">
 							<p class="link-title"></p>
@@ -182,7 +180,15 @@
 						<figcaption class="description"></figcaption>
 						<p class="type"></p>
 						<p class="time-updated"></p>
-						<p class="time-created"></p>
+						<p class="time-created"></p> </div>
+
+						<div class="hide" > <picture>
+							<source class="image-thumb">
+							<source class="image-square">
+							<source class="image-display">
+							<img class="image">
+						</picture> </div>
+
 					</figure>
 				</li>
 			</template>
@@ -190,18 +196,21 @@
 			<template id="video-file-block">
 				<li>
 					<figure class="video-file-block">
-						<h3 class="title"></h3>
-						<picture>
-							<source class="image-thumb">
-							<source class="image-square">
-							<source class="image-display">
-							<img class="image">
-						</picture>
+						<div class="view"><h3 class="title"></h3>
+					
 						<video class="video" controls></video> <!-- Video source inserts here. -->
 						<figcaption class="description"></figcaption>
 						<p class="type"></p>
 						<p class="time-updated"></p>
-						<p class="time-created"></p>
+						<p class="time-created"></p> </div>
+
+						<div class="hide" > <picture>
+							<source class="image-thumb">
+							<source class="image-square">
+							<source class="image-display">
+							<img class="image"> 
+						</picture> </div>
+
 					</figure>
 				</li>
 			</template>
